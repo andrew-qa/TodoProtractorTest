@@ -2,16 +2,17 @@
 This is solution for home test task.
 
 Following test cases covered:
-1. Create new todo
-2. Edit todo
-3. Mark it as done (single task)
-4. Mark all todos as done (batch selection)
-5. Delete active todo
-6. Delete completed todo
-7. Check counter of active todo
-8. Check "All" list
-9. Check "Active" list
-10. Check "Completed" list
-11. Clear completed
-
+<ol>
+<li>Create new todo</li>
+<li>Edit todo</li>
+<li>Mark it as done (single task)</li>
+<li>Mark all todos as done (batch selection)</li>
+<li>Delete active todo</li>
+<li>Delete completed todo</li>
+<li>Check counter of active todo</li>
+<li>Check "All" list</li>
+<li>Check "Active" list</li>
+<li>Check "Completed" list</li>
+<li>Clear completed</li>
+</ol>
 Tests were launched with Chrome 40.0.2214.115 (64-bit) on Mac OS 10.10.2 with Protractor 1.7.0
