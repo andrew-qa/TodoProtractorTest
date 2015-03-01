@@ -12,8 +12,8 @@ describe('angularjs todo', function() {
   var toggleAll = element(by.id('toggle-all'));
   var clearCompleted = element(by.id('clear-completed'));
   var filterAll = element(by.xpath('//*[@id="filters"]/li[1]/a'));
-  var filterActive = filtersList.element(by.xpath('//*[@id="filters"]/li[2]/a'));
-  var filterCompleted = filtersList.element(by.xpath('//*[@id="filters"]/li[3]/a'));
+  var filterActive = element(by.xpath('//*[@id="filters"]/li[2]/a'));
+  var filterCompleted = element(by.xpath('//*[@id="filters"]/li[3]/a'));
 
   // helper methods
   function createTodo(textTodo) {
@@ -38,6 +38,7 @@ describe('angularjs todo', function() {
   	createTodo('JNA7aL0acuGQq8voG##JR2%2EkvVwuJxY#JiFAYP H#ItYhsmK45k7LJKEMq6tkHpgpA9jYx 1QWXyeMsM87eG7BoV1RfYH1aSpTQaKyc3k6e1vpWa3BcSFBc%t3e#06LBjBU%m3zKn1vAWcBzXZ7rnRcyVXIEJwp%NaBhW#0BmrNcSeGp90xetPy8vrPk8GxKBJ0Iv9o&5%wL90YlXeLS89LZkS EiCF15lH0Em0aNEl8g84ZARHIscpBFzkGRJU');
   	expect(listElements.count()).toBe(1);
   	expect(firstLabel.getText()).toEqual('JNA7aL0acuGQq8voG##JR2%2EkvVwuJxY#JiFAYP H#ItYhsmK45k7LJKEMq6tkHpgpA9jYx 1QWXyeMsM87eG7BoV1RfYH1aSpTQaKyc3k6e1vpWa3BcSFBc%t3e#06LBjBU%m3zKn1vAWcBzXZ7rnRcyVXIEJwp%NaBhW#0BmrNcSeGp90xetPy8vrPk8GxKBJ0Iv9o&5%wL90YlXeLS89LZkS EiCF15lH0Em0aNEl8g84ZARHIscpBFzkGRJU');
+  	deleteTodo(firstLabel, firstDelete);
   });
 
   it('should create new todo', function() {
